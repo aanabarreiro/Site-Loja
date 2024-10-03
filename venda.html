@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Vendas</title>
+    <link rel="stylesheet" href="/css/vendas.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vind@ ao <em>Toque de Diva</em>!</h1>
+        <br>
+        <p>Desperte a diva que há em você – encontre o brilho que você merece!</p>
+        <br>
+        <div class="dados">
+            <a href="index.html">Página Inicial</a>
+            <a href="ctrl-estoque.html">Controle de Estoque</a>
+            <a href="add-produto.html">Adicionar Produto</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="venda.html">Página de vendas</a>
+            <a href="historico-vendas.html">Histórico de Vendas</a>
+        </div>
+    </header>
+    <body>
+        <h2 class="tabela">Controle de Estoque</h2>
+    
+    <main> 
+        <section>
+            <h2>Página de Vendas</h2>
+
+            <form action="#">
+
+                <label for="produto">Selecione o produto que você escolheu:</label>
+                <select name="produto" id="">
+                    <option value="bolacha">Bolacha Leite</option>
+                    <option value="camisa-batman">Camisa do Batman</option>
+                    <option value="camisa-treino">Camisa Treino Fofo</option>
+                    <option value="whey-concentrado">Whey Concentrado 80%</option>
+                    <option value="whey-isolado">Whey Isolado 90%</option>
+                </select>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" name="quantidade">
+
+                <label for="frete">Digite seu Cep:</label>
+                <input type="number" name="quantidade">
+
+                <label for="pagamento">Forma de Pamento:</label>
+                <select name="pagamento" id="">
+                    <option value="cartao">Cartão de Credito</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="boleto">Boleto</option>
+                    <option value="pix">Pix</option>
+                </select>
+                
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+<style>
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    header {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:#F4CFD6;
+        background-color: black;
+        padding: 3.5vh 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .dados a{
+        color:#F4CFD6 ;
+    }
+    td{
+    border: 3px solid #F4CFD6;
+    padding: 1vh;
+    text-align: center;
+    width: 40vh;
+   }
+    table img{
+        width: 15vh;
+        height: 15vh;
+
+    }
+   .tabela{
+        background-color: #F4CFD6;
+        padding: 2vh;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .dados a:hover {
+        text-decoration: underline;
+    }
+    .dados a{
+        color: black;
+        padding-right: 2vh; 
+        text-decoration: none;
+        color: #F4CFD6;        
+    }
+   
+</style>

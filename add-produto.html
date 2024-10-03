@@ -10,11 +10,14 @@
     <h1>Bem-vind@ ao <em>Toque de Diva</em>!</h1>
     <br>
     <p>Desperte a diva que há em você – encontre o brilho que você merece!</p>
+    <br>
     <div class="dados">
         <a href="index.html">Página Inicial</a>
         <a href="ctrl-estoque.html">Controle de Estoque</a>
         <a href="add-produto.html">Adicionar Produto</a>
         <a href="funcionarios.html">Funcionários</a>
+        <a href="venda.html">Página de vendas</a>
+        <a href="historico-vendas.html">Histórico de Vendas</a>
     </div>
 
 </header>
@@ -45,12 +48,12 @@
         <div>
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
             <label>Quantidade disponível: </label>
-            <input>
+            <input type="number" id="qnt" name="qnt">
         </div>
 <br>
         <div class="form-add">
             <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-            <button type="submit">Adicionar</button>
+            <a href="index.html" type="button">Adicionar</button>
         </div>
 
     </form>
@@ -76,14 +79,23 @@
         background-color: #F4CFD6;
         padding: 2vh;
     }
-    div button{
+    .form-add a{
         background-color: #F4CFD6;
         padding: 5px;
         border-radius: 10%;
+        text-decoration: none;
+        color: black;
     }
     form{
         margin: 3vh;
     }
+    .dados a{
+        color: black;
+        padding-right: 2vh; 
+        text-decoration: none;
+        color: #F4CFD6;   
+    }
+    
     .dados a:hover {
         text-decoration: underline;
         }

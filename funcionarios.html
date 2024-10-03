@@ -9,27 +9,31 @@
 <header>
     <h1>Bem-vind@ ao <em>Toque de Diva</em>!</h1>
     <br>
-    <p>Desperte a diva que há em você – encontre o brilho que você merece!</p> 
+    <p>Desperte a diva que há em você – encontre o brilho que você merece!</p>
+    <br> 
     <div class="dados">
         <a href="index.html">Página Inicial</a>
         <a href="ctrl-estoque.html">Controle de Estoque</a>
         <a href="add-produto.html">Adicionar Produto</a>
         <a href="funcionarios.html">Funcionários</a>
+        <a href="venda.html">Página de vendas</a>
+        <a href="historico-vendas.html">Histórico de Vendas</a>
     </div>
 </header>
 <body>
     
    
 
-    <h2>Funcionários</h2>
+    <h2 class="tabela">Funcionários</h2>
     <!-- Crie uma lista de funcionários usando as tags que você aprendeu hoje abaixo \/ -->
-    <ul>
-        <li>Gabriel Arnold</li>
-        <li>Arthur Juwer</li>
-        <li>Arthur Machado</li>
-        <li>Bruno Luiz</li>
+    <div class="funcionarios">
+        <ul>
+        <li>➠Gabriel Arnold</li>
+        <li>➠Arthur Juwer</li>
+        <li>➠Arthur Machado</li>
+        <li>➠Bruno Luiz</li>
     </ul>
-        
+</div>        
 </body>
 </html>
 <style>
@@ -54,7 +58,22 @@
         text-decoration: none;
         
     }
+    .dados a{
+        color:#F4CFD6 ;
+        padding-right: 2vh; 
+        text-decoration: none;
+    }
     .dados a:hover {
         text-decoration: underline;
-        }
+    }
+    .tabela{
+        background-color: #F4CFD6;
+        padding: 2vh;
+    }
+    .funcionarios{
+        margin: 2vh;
+    }
+    ul{
+        list-style: none;
+    }
 </style>

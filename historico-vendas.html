@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Toque de Diva</title>
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="/css/historico.css">
 </head>
-
 <body>
     <header>
         <h1>Bem-vind@ ao <em>Toque de Diva</em>!</h1>
         <br>
         <p>Desperte a diva que há em você – encontre o brilho que você merece!</p>
     </header>
-
-<main>
+    
     <div class="dados">
         <a href="index.html">Página Inicial</a>
         <a href="ctrl-estoque.html">Controle de Estoque</a>
@@ -23,23 +22,45 @@
         <a href="venda.html">Página de vendas</a>
         <a href="historico-vendas.html">Histórico de Vendas</a>
     </div>
+    <main>
 
-    <div class="produtos">
-   
-</main>
-    <footer>
-        <p>Siga-nos nas redes sociais!</p>
-        <br>
-        <div id="redesSociais">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"/>
-            <img src="https://sf-static.tiktokcdn.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png"/>
-            <img src="https://cdn-icons-png.flaticon.com/256/124/124010.png"/>
+    
+    <section>
+        <h2>Histórico</h2>
+        <div class="filtro">
+            <select name="calendar" id="">
+                <option value="domingp">Domingo</option>
+                <option value="segunda">Segunda-Feira</option>
+                <option value="terca">Terça-Feira</option>
+                <option value="quarta">Quarta-Feira</option>
+                <option value="quinta">Quinta-Feira</option>
+                <option value="sexta">Sexta-Feira</option>
+                <option value="sabado">Sabado</option>
+            </select>
         </div>
-    </footer>
+        <table>
+            <tr>
+                <th>Horário</th>
+                <th>Funcionário</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Total</th>
+                <th>Forma de Pagamento</th>
+            </tr>
+            <tr>
+                <td>22:26</td>
+                <td>Arthur Juwer</td>
+                <td>Camisa do Batman</td>
+                <td>2</td>
+                <td>R$ 59,80</td>
+                <td>Pix</td>
+            </tr>
+        </table>
+        
+    </section>
+    </main>
 </body>
 </html>
-
-
 <style>
     *{
         margin: 0;
