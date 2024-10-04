@@ -12,22 +12,21 @@
         <h1>Bem-vind@ ao <em>Toque de Diva</em>!</h1>
         <br>
         <p>Desperte a diva que há em você – encontre o brilho que você merece!</p>
+        <br>
+        <div class="dados">
+            <a href="index.html">Página Inicial</a>
+            <a href="ctrl-estoque.html">Controle de Estoque</a>
+            <a href="add-produto.html">Adicionar Produto</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="venda.html">Página de vendas</a>
+            <a href="historico-vendas.html">Histórico de Vendas</a>
+        </div>
     </header>
     
-    <div class="dados">
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
-        <a href="venda.html">Página de vendas</a>
-        <a href="historico-vendas.html">Histórico de Vendas</a>
-    </div>
+    <h2 class="tabela">Histórico de Vendas</h2>
     <main>
-
-    
-    <section>
-        <h2>Histórico</h2>
-        <div class="filtro">
+        
+        <div class="dias">
             <select name="calendar" id="">
                 <option value="domingp">Domingo</option>
                 <option value="segunda">Segunda-Feira</option>
@@ -48,27 +47,31 @@
                 <th>Forma de Pagamento</th>
             </tr>
             <tr>
-                <td>22:26</td>
-                <td>Arthur Juwer</td>
-                <td>Camisa do Batman</td>
-                <td>2</td>
-                <td>R$ 59,80</td>
+                <td>10:41</td>
+                <td>Ana Barreiro</td>
+                <td>Gloss</td>
+                <td>1</td>
+                <td>R$19,90</td>
                 <td>Pix</td>
             </tr>
         </table>
         
-    </section>
     </main>
+    
 </body>
 </html>
 <style>
-    *{
+     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
 
     }
-   
+    .titulo{
+       
+        background-color: #F4CFD6;
+    }
+
     header {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color:#F4CFD6;
@@ -77,54 +80,42 @@
         justify-content: center;
         text-align: center;
     }
-    body{
-        height: 100vh;
+    .dados a{
+        color:#F4CFD6 ;
+    }
+    td{
+    border: 3px solid #F4CFD6;
+    padding: 1vh;
+    text-align: center;
+    width: 40vh;
+   }
+    table img{
+        width: 15vh;
+        height: 15vh;
+
+    }
+   .tabela{
+        background-color: #F4CFD6;
+        padding: 2vh;
+    }
+    table{
+        border-collapse: collapse;
     }
     main{
-        margin-bottom:0% ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3vh;
+    
     }
-    footer{
-        background-color: black;
-        color: #F4CFD6;
-        padding: 1%;
-        text-align: center;
-        height: 17vh;
-        margin-top: 0%;
-    }
-    .dados{
-        background-color:#F4CFD6;
-        color: white;
-        padding: 2vh;
-        text-align: center;
-       
+    .dados a:hover {
+        text-decoration: underline;
     }
     .dados a{
         color: black;
         padding-right: 2vh; 
         text-decoration: none;
-        color: black;
-
-        
+        color: #F4CFD6;        
     }
     
-    .dados a:hover {
-        text-decoration: underline;
-        }
-    #redesSociais img {
-        width: 5vh;
-        height: 5vh;
-        border-radius: 50%;
-        
-    }
-    .padrao{
-        color: #F4CFD6;
-    }
-    .produtos {
-        width: 100%;
-        height: 70vh;
-        background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL2hpcHBvdW5pY29ybl9jb3NtZXRpY19tYWtlX3VwX2ZsYXRfbGF5X3BpbmtfYmFja2dyb3VuZF9iODQxY2U1MC1mNDRhLTQ4ODAtODEwMC1hMDc5Yjc4MjA3NDUuanBn.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
 </style>
